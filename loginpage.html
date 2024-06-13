@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #text {
+            height: 25px;
+            border-radius: 5px;
+            padding: 4px;
+            border: solid thin #aaa;
+            width: calc(100% - 16px);
+        }
+        #button {
+            padding: 10px;
+            width: 100%;
+            color: white;
+            background-color: lightblue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <form method="post" action="login.php" autocomplete="off">
+            <div style="font-size: 20px; margin: 10px;">Login</div>
+            <input id="text" type="text" name="user_name" placeholder="Username" required><br><br>
+            <input id="text" type="password" name="password" placeholder="Password" required><br><br>
+            <input id="button" type="submit" value="Login"><br><br>
+            <a href="signup.html">Click to Signup</a><br><br>
+        </form>
+    </div>
+</body>
+</html>
+
